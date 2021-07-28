@@ -1,26 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Layout from "./components/Layout/HomeLayout";
+import theme from "./theme/index";
+import { ThemeProvider } from "@material-ui/core/styles";
+import Home from "./Pages/Home";
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <h1>Hwl000</h1>
+      <Layout>
+        <Home />
+      </Layout>
+    </ThemeProvider>
   );
-}
+};
 
 export default App;
