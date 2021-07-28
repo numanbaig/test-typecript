@@ -26,7 +26,7 @@ const InputComponent: React.FC<Props> =({
       </IconButton>
       <InputBase
         value={search}
-        // onChange={(e: string) => setSearch(e.target.value)}
+        onChange={(e: any) => setSearch(e.target.value)}
         className={classes.input}
         placeholder="Search Contacts"
       />

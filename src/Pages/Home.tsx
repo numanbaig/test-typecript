@@ -53,8 +53,8 @@ const Home = () => {
     if (search === "") {
       renderList(contacts);
     } else {
-      const array = newContacts.filter((e: any) => e.name.includes(search));
-      renderList(array);
+      // const array = newContacts.filter((e: any) => e.name.includes(search));
+      // renderList(array);
     }
   }, [contacts, search]);
 
